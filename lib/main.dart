@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:flutter_app/RandomWords.dart';
 
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -23,12 +24,15 @@ class MyApp extends StatelessWidget {
 //      ),
 //    );
 
-  return new MaterialApp(
-    title: 'StartUp',
-    home: new RandomWords(),
-  );
-
+    return new MaterialApp(
+      title: 'Startup Name Generator',
+      theme: new ThemeData(
+        primaryColor: Colors.white,
+      ),
+      home: new RandomWords(),
+    );
   }
+
 }
 
 
