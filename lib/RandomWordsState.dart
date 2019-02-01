@@ -1,5 +1,6 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/NewRoute.dart';
 import 'package:flutter_app/RandomWords.dart';
 
 class RandomWordsState extends State<RandomWords> {
@@ -19,7 +20,30 @@ class RandomWordsState extends State<RandomWords> {
         ],
       ),
       body: _buildSuggestions(),
+      floatingActionButton: new FloatingActionButton(
+//        onPressed: _incrementCounter,
+        onPressed: () {
+//          Navigator.push(context, new MaterialPageRoute(builder: (context) {
+//            return new NewRoute("我的世界");
+//          }));
+          debugDumpApp();
+
+//        调用路由
+//        Navigator.pushNamed(context, "new_page");
+
+        },
+        tooltip: 'Increment',
+        child: new Icon(Icons.add),
+      ),
     );
+  }
+
+  int count = 0;
+
+  void _incrementCounter() {
+    setState(() {
+      print(count++);
+    });
   }
 
   Widget _buildSuggestions() {
@@ -50,7 +74,7 @@ class RandomWordsState extends State<RandomWords> {
       ),
       onTap: () {
         setState(
-              () {
+          () {
             if (alreadySaved) {
               _saved.remove(pair);
             } else {
@@ -67,7 +91,7 @@ class RandomWordsState extends State<RandomWords> {
       new MaterialPageRoute(
         builder: (context) {
           final tiles = _saved.map(
-                (pair) {
+            (pair) {
               return new ListTile(
                 title: new Text(
                   pair.asPascalCase,
@@ -76,12 +100,10 @@ class RandomWordsState extends State<RandomWords> {
               );
             },
           );
-          final divided = ListTile
-              .divideTiles(
+          final divided = ListTile.divideTiles(
             context: context,
             tiles: tiles,
-          )
-              .toList();
+          ).toList();
 
           return new Scaffold(
             appBar: new AppBar(
