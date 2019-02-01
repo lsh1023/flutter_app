@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/NewRoute.dart';
 import 'package:flutter_app/RandomWords.dart';
 
+
 class RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[];
 

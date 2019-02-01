@@ -4,8 +4,6 @@ class Person {
   String gender;
 
 
-
-
   Person(this.name, this.age, this.gender);
 
   @override

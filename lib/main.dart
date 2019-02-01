@@ -3,7 +3,6 @@ import 'package:english_words/english_words.dart';
 import 'package:flutter_app/NewRoute.dart';
 import 'package:flutter_app/RandomWords.dart';
 
-
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
