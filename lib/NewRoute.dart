@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/CounterWidget.dart';
 import 'package:flutter_app/Echo.dart';
+import 'package:flutter_app/Login.dart';
+import 'package:flutter_app/SwitchAndCheckBoxTestRoute.dart';
 import 'package:flutter_app/TapboxA.dart';
 
 class NewRoute extends StatelessWidget {
@@ -53,8 +55,26 @@ class NewRoute extends StatelessWidget {
 //      ),
 
 //          IconButton是一个可点击的Icon，不包括文字，默认没有背景，点击后会出现背景：
-      child: IconButton(icon: Icon(Icons.thumb_up),  onPressed: () => {},),
+//      child: IconButton(icon: Icon(Icons.subway),  onPressed: () => {},),
 
+
+      //网络加载图片
+//      child: Image(
+//        image: NetworkImage(
+//            "https://avatars2.githubusercontent.com/u/20411648?s=460&v=4"),
+//        width: 100.0,
+//
+//      ),
+
+//      child: SwitchAndCheckBoxTestRoute(),
+
+
+      child: Login(),
+
+//      child: Image(
+//          image: AssetImage("images/test.png"),
+//          width: 100.0
+//      ),
 
 //      child: Text.rich(TextSpan(
 //          children: [
@@ -73,4 +93,7 @@ class NewRoute extends StatelessWidget {
       ),
     );
   }
+
+
+
 }
