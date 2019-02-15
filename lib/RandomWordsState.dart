@@ -24,9 +24,9 @@ class RandomWordsState extends State<RandomWords> {
       floatingActionButton: new FloatingActionButton(
 //        onPressed: _incrementCounter,
         onPressed: () {
-//          Navigator.push(context, new MaterialPageRoute(builder: (context) {
-//            return new NewRoute("我的世界");
-//          }));
+          Navigator.push(context, new MaterialPageRoute(builder: (context) {
+            return new NewRoute("我的世界");
+          }));
           debugDumpApp();
 
 //        调用路由
