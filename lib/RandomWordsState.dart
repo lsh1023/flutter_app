@@ -7,9 +7,7 @@ import 'package:flutter_app/RandomWords.dart';
 
 class RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[];
-
   final _saved = new Set<WordPair>();
-
   final _biggerFont = const TextStyle(fontSize: 18.0);
 
   @override

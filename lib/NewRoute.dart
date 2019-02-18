@@ -2,9 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/CounterWidget.dart';
 import 'package:flutter_app/Echo.dart';
+import 'package:flutter_app/FlexLayoutTestRoute.dart';
+import 'package:flutter_app/FormTestRoute.dart';
 import 'package:flutter_app/Login.dart';
+import 'package:flutter_app/PaddingTestRoute.dart';
 import 'package:flutter_app/SwitchAndCheckBoxTestRoute.dart';
 import 'package:flutter_app/TapboxA.dart';
+import 'package:flutter_app/TestFlowDelegate.dart';
 
 class NewRoute extends StatelessWidget {
 //  路由传值
@@ -69,7 +73,12 @@ class NewRoute extends StatelessWidget {
 //      child: SwitchAndCheckBoxTestRoute(),
 
 
-      child: Login(),
+//      child: Login(),
+//      child: FlexLayoutTestRoute(),
+
+        child:PaddingTestRoute() ,
+
+//      child: FormTestRoute(),
 
 //      child: Image(
 //          image: AssetImage("images/test.png"),
